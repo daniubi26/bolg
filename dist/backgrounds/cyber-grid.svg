@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#04040c"/>
+      <stop offset="0.5" stop-color="#081a2a"/>
+      <stop offset="1" stop-color="#070815"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d1ff" stop-opacity="0.0"/>
+      <stop offset="0.2" stop-color="#00d1ff" stop-opacity="0.55"/>
+      <stop offset="0.7" stop-color="#7c5cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff4fd8" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="center" cx="50%" cy="55%" r="60%">
+      <stop offset="0" stop-color="#00d1ff" stop-opacity="0.28"/>
+      <stop offset="0.4" stop-color="#7c5cff" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#00d1ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#center)"/>
+
+  <g stroke="url(#line)" stroke-width="1" opacity="0.60" filter="url(#glow)">
+    <!-- vertical lines -->
+    <g opacity="0.95">
+      <path d="M140 1080 L 610 0" />
+      <path d="M250 1080 L 760 0" />
+      <path d="M360 1080 L 910 0" />
+      <path d="M470 1080 L 1060 0" />
+      <path d="M580 1080 L 1210 0" />
+      <path d="M690 1080 L 1360 0" />
+    </g>
+    <!-- horizontal lines -->
+    <g opacity="0.85">
+      <path d="M0 740 L 1920 420" />
+      <path d="M0 820 L 1920 495" />
+      <path d="M0 900 L 1920 570" />
+      <path d="M0 980 L 1920 645" />
+    </g>
+  </g>
+
+  <g fill="#ffffff" opacity="0.65">
+    <circle cx="1500" cy="260" r="1.8"/>
+    <circle cx="1260" cy="230" r="1.4"/>
+    <circle cx="1620" cy="410" r="1.6"/>
+    <circle cx="980" cy="170" r="1.4"/>
+    <circle cx="560" cy="360" r="1.6"/>
+    <circle cx="430" cy="460" r="1.4"/>
+    <circle cx="760" cy="620" r="1.7"/>
+  </g>
+
+  <g opacity="0.20">
+    <path d="M0 720 C 420 640, 770 860, 1180 780 S 1690 680, 1920 720 L 1920 1080 L 0 1080 Z" fill="#00d1ff"/>
+    <path d="M0 780 C 430 710, 780 920, 1200 840 S 1700 745, 1920 785 L 1920 1080 L 0 1080 Z" fill="#ff4fd8"/>
+  </g>
+</svg>
+

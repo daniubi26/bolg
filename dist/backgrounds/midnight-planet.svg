@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05061a"/>
+      <stop offset="0.55" stop-color="#0b1635"/>
+      <stop offset="1" stop-color="#020511"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="58%" cy="45%" r="42%">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#00d1ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#00d1ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="55%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#00d1ff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#00d1ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <g filter="url(#blur)">
+    <circle cx="1130" cy="470" r="450" fill="url(#planet)"/>
+    <circle cx="1060" cy="430" r="560" fill="url(#halo)"/>
+  </g>
+  <g fill="#ffffff" opacity="0.70">
+    <circle cx="180" cy="160" r="2"/>
+    <circle cx="420" cy="260" r="1.6"/>
+    <circle cx="780" cy="180" r="1.7"/>
+    <circle cx="1020" cy="140" r="1.4"/>
+    <circle cx="1350" cy="220" r="2"/>
+    <circle cx="1560" cy="150" r="1.8"/>
+    <circle cx="1730" cy="320" r="1.6"/>
+    <circle cx="260" cy="450" r="1.7"/>
+    <circle cx="520" cy="560" r="1.4"/>
+    <circle cx="920" cy="660" r="1.8"/>
+    <circle cx="1240" cy="650" r="1.6"/>
+    <circle cx="1520" cy="760" r="1.9"/>
+    <circle cx="1760" cy="650" r="1.5"/>
+  </g>
+  <g opacity="0.18">
+    <path d="M0 740 C 330 650, 650 820, 980 760 S 1540 680, 1920 740 L 1920 1080 L 0 1080 Z" fill="#00d1ff"/>
+    <path d="M0 800 C 360 720, 680 890, 1010 830 S 1580 750, 1920 800 L 1920 1080 L 0 1080 Z" fill="#7c5cff"/>
+  </g>
+</svg>
+
